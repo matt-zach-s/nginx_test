@@ -6,3 +6,6 @@ terraform_version = "1.11.3"
 repo = "nuonco/aws-eks-sandbox"
 branch = "main"
 directory = "."
+
+[vars]
+enable_nuon_dns = "true"
