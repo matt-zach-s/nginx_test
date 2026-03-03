@@ -1,0 +1,15 @@
+# helm
+name = "nginx"
+type = "helm_chart"
+chart_name = "nginx"
+namespace = "nginx-test"
+storage_driver = "configmap"
+# dependencies = []
+
+[public_repo]
+repo = "matt-zach-s/nginx-test"
+directory = "components/chart/nginx"
+branch = "main"
+
+[[values_file]]
+contents = "./values/nginx/values.yaml"

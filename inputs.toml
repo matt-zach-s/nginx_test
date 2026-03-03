@@ -1,0 +1,31 @@
+# inputs
+
+# --- Groups ---
+
+[[group]]
+name = "application"
+description = "Core application settings"
+display_name = "Application"
+
+[[group]]
+name = "networking"
+description = "Domain and ingress settings"
+display_name = "Networking"
+
+# --- Inputs ---
+
+[[input]]
+name = "subdomain"
+description = "Subdomain for nginx (e.g. 'app' for app.customer.nuon.run)"
+default = "nginx"
+display_name = "Subdomain"
+group = "networking"
+
+[[input]]
+name = "admin_password"
+description = "Initial admin password for nginx"
+default = ""
+display_name = "Admin Password"
+group = "application"
+sensitive = true
+required = true
